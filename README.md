@@ -1,10 +1,12 @@
 # Preppin-Data-2023-Week-4-New-Customers
 
-#### Link to Challenge
+![image](https://github.com/JP852/Preppin-Data-2023-Week-4-New-Customers/assets/142391590/6039ff03-c4a9-470a-9c1b-0bd7f925e039)
+
+## Link to Challenge
 
 https://preppindata.blogspot.com/2023/01/2023-week-4-new-customers.html
 
-#### SQL Techniques Used
+## SQL Techniques Used
 
 - CTEs
 - Order By
