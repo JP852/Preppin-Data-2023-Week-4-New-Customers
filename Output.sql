@@ -94,9 +94,10 @@ SELECT
     ,ethnicity
     ,account_type
     ,date_of_birth::date as date_of_birth
-    ,ROW_NUMBER() OVER(PARTITION BY id ORDER BY joining_date ASC) as rn
-        FROM PRE_PIVOT
-            PIVOT(MAX(value) FOR demographic IN ('Ethnicity','Account Type','Date of Birth')) AS P
+    ,ROW_NUMBER() OVER(PARTITION BY id 
+        ORDER BY joining_date ASC) as rn
+            FROM PRE_PIVOT
+                PIVOT(MAX(value) FOR demographic IN ('Ethnicity','Account Type','Date of Birth')) AS P
                 (id
                 ,joining_date
                 ,ethnicity
